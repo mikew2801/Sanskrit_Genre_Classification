@@ -109,7 +109,9 @@ print("Accuracy of MNB = " + str(accuracy))
 
 from sklearn import feature_extraction
 from sklearn import pipeline
-from sklearn import linear_model
+from sklearn import linear_model.LogisticRegression()
+
+model = LogisticRegression()
 
 model.fit(X_train, y_train)
 y_predicted = model.predict(X_test)
